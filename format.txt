@@ -1,0 +1,6 @@
+- Aim/Objective
+- Introduction (Complete Description)
+- Algorithm
+- Code
+- Output
+- Learning from experiment
