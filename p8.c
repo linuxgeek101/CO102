@@ -1,28 +1,21 @@
 #include <stdio.h>
 int main()
 {
-	int dec, bin;
+	long long int dec, bin;
 	bin = 0;
 	printf("Enter a number in decimal system: ");
-	scanf("%d", &dec);
-	int n = dec; int db=0;
-	while(n > 0)
-	{
-		db++;
-		n /= 2;
-	}
-	printf("%d\n", db);
-	int fac = 1;
+	scanf("%lld", &dec);
+	long long int fac = 1;
 	while(dec >= 1)
 	{
 		if(dec%2==1)
-			bin += 1 * fac;
+			bin += fac;
 		fac *= 10;
 		dec /= 2;
 	}
-	printf("%d\n", bin);
+	printf("%lld\n", bin);
 	printf("Enter a number in binary: ");
-	scanf("%d", &bin);
+	scanf("%lld", &bin);
 	fac = 1;
 	while(bin > 0)
 	{
@@ -30,5 +23,5 @@ int main()
 		fac *= 2;
 		bin /= 10;
 	}
-	printf("%d\n", dec);
+	printf("%lld\n", dec);
 }

@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-	int num, sum;
+	int num, sum=0;
 	printf("Enter a five digit number: ");
 	scanf("%d", &num);
 	while(num > 0)

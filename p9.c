@@ -2,7 +2,7 @@
 int main()
 {
 	int num;
-	printf("Enter a number: ");
+	printf("Enter a number corresponding to a day of week: ");
 	scanf("%d", &num);
 	switch(num)
 	{
