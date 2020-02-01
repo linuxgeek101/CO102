@@ -4,7 +4,8 @@ void main()
     int n;
     printf("Enter no. of elements : ");
     scanf("%d", &n);
-    int least, pos=0, arr[n],swap;
+    int least, pos=0, *arr,swap;
+    arr = (int *) malloc(n*sizeof(int));
     printf("Enter numbers: ");
     for(int i=0;i<n;i++)
         scanf("%d",&arr[i]);
