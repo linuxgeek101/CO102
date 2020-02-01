@@ -9,7 +9,7 @@ int main()
         ar = (int *) malloc(n * sizeof(int));
         for(int i = 0; i < n; i++)
         {
-                scanf("%d", ar + i);
+            scanf("%d", ar + i);
         }
         int temp = 0;
         for(int i = 0; i < n-1; i++)
@@ -28,5 +28,5 @@ int main()
 	for(int i = 0;i < n; i++)
 		printf("%d ", ar[i]);
 	printf("\n");
-
+    free(ar);
 }

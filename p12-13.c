@@ -1,18 +1,19 @@
 #include <stdio.h>
 int main()
 {
-	int n, x;
+	int x;
+	const int N = 10;
 	printf("Enter the no. of elements in array : ");
-	scanf("%d", &n);
-	int ar[n];
+	scanf("%d", &N);
+	int ar[10];
 	printf("Enter elements of array :\n");
-	for(int i = 0; i < n; i++)
+	for(int i = 0; i < N; i++)
 	{
 		scanf("%d", ar + i);
 	}
 	printf("Enter a number to search : ");
 	scanf("%d", &x);
-	for(int i = 0; i < n; i++)
+	for(int i = 0; i < N; i++)
 	{
 		if(x == ar[i])
 		{

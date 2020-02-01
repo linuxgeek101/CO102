@@ -3,3 +3,10 @@
 ################################################################################
 
 /.vs
+/Git.vcxproj.user
+/Git.vcxproj.filters
+/Git.vcxproj
+/Git.sln
+*.json
+*.obj
+*.exe
