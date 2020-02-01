@@ -10,3 +10,10 @@
 *.json
 *.obj
 *.exe
+/x64/Debug/Testing.tlog
+*.log
+/x64/Debug/Testing.vcxproj.FileListAbsolute.txt
+/Testing.sln
+*.vcxproj
+*.filters
+*.user
