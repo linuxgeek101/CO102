@@ -1,15 +1,18 @@
 #include<stdio.h>
 void main()
 {
-    int least, pos=0, arr[10],swap;
+    int n;
+    printf("Enter no. of elements : ");
+    scanf("%d", &n);
+    int least, pos=0, arr[n],swap;
     printf("Enter numbers: ");
-    for(int i=0;i<10;i++)
+    for(int i=0;i<n;i++)
         scanf("%d",&arr[i]);
-    for(int i=0;i<9;i++)
+    for(int i=0;i<n;i++)
     {
         pos=i;
         least=arr[i];
-        for(int j=i;j<10;j++)
+        for(int j=i;j<n;j++)
             if(least>arr[j])
             {
                 pos=j;
@@ -19,6 +22,7 @@ void main()
         arr[pos]=arr[i];
         arr[i]=swap;
     }
-    for(int i=0;i<10;i++)
-        printf("\n%d",arr[i]);
+    for(int i=0;i<n;i++)
+        printf("%d ",arr[i]);
+    printf("\n");
 }
