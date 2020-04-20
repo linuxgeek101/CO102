@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stdio.h>
 int main()
 {
@@ -28,3 +29,32 @@ int main()
                 printf("%d ", ar[i]);
 	printf("\n");
 }
+=======
+#include<stdio.h>
+void main()
+{
+    int least, pos=0, arr[10],swap;
+    printf("Enter numbers: ");
+    for(int i=0;i<10;i++)
+        scanf("%d",&arr[i]);
+    for(int i=0;i<9;i++)
+    {
+        pos=i;
+        least=arr[i];
+        for(int j=i;j<10;j++)
+            if(least>arr[j])
+            {
+                pos=j;
+                least=arr[j];
+            }
+        swap=arr[pos];
+        for(int j=pos;j>i;j--)
+        {
+            arr[j]=arr[j-1];
+        }
+        arr[i]=swap;
+    }
+    for(int i=0;i<10;i++)
+        printf("\n%d",arr[i]);
+}
+>>>>>>> 5c9f865773fc0321f29fc6f14c4e2ab13ce4157e
