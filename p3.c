@@ -1,15 +1,15 @@
 #include <stdio.h>
 int main()
 {
-	float prin, rate, time, si;
+	double prin, rate, time, si;
 	printf("Enter Principal : ");
-	scanf("%f", &prin);
+	scanf("%lf", &prin);
 
 	printf("Enter rate : ");
-	scanf("%f", &rate);
+	scanf("%lf", &rate);
 	printf("Enter time(in years) : ");
-	scanf("%f", &time);
+	scanf("%lf", &time);
 	si = (prin * rate * time )/ 100;
-	printf("Simple Interest : %.2f\n", si);
+	printf("Simple Interest : %.2lf\n", si);
 
 }
