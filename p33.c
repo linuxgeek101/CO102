@@ -15,9 +15,9 @@ int main()
   {
     for(int j = 0; j < m; j++)
     {
-      int c = 0;
-      scanf("%d", &c);
-      arrp[i][j] = c; 
+      //int c = 0;
+      scanf("%d", (*(arrp+i)+j));
+      //arrp[i][j] = c; 
     }
   }
   printf("--------------------------------------------------\n");
