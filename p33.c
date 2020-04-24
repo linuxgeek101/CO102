@@ -13,7 +13,7 @@ int main()
 
   for(int i = 0; i < m; i++)
   {
-    for(int j = 0; j < m; j++)
+    for(int j = 0; j < n; j++)
     {
       //int c = 0;
       scanf("%d", (*(arrp+i)+j));
@@ -23,7 +23,7 @@ int main()
   printf("--------------------------------------------------\n");
   for(int i = 0; i < m; i++)
   {
-    for(int j = 0; j < m; j++)
+    for(int j = 0; j < n; j++)
     {
       printf("%d\t", *(*(arrp+ i) + j) * *(*(arrp + i) + j));
     }
