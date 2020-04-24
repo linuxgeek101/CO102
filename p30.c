@@ -28,7 +28,7 @@ int main()
   printf("Triangle : %.2lf\n", areaTriangle(a, b, c));
   printf("Square : %.2lf\n", areaSquare(s));
   printf("Rectangle : %.2lf\n", areaRect(l, b));
-  printf("The perimeter of %.2lf:\n");
+  printf("The perimeter of :\n");
   printf("Circle : %.2lf\n", perCircle(r));
   printf("Triangle : %.2lf\n", perTriangle(a, b, c));
   printf("Square : %.2lf\n", perSquare(s));

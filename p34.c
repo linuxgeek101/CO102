@@ -9,10 +9,9 @@ int main()
 {
   FILE* fil = NULL;
   fil = fopen("emp.txt", "w");
-  //struct emp emp1 = {"Richard Hanrick", 25, 70000.00};
   Emp emp1;
   printf("Enter your name : ");
-  fgets(emp1.name, 50, stdin); 
+  fgets(emp1.name, 256, stdin); 
   printf("Enter your age : ");
   scanf("%d", &emp1.age);
   printf("Enter your salary : ");
