@@ -1,60 +1,44 @@
-<<<<<<< HEAD
 #include <stdio.h>
+#include <stdlib.h>
 int main()
 {
-	int n;
-	printf("Enter length: ");
-	scanf("%d", &n);
-	int ar[n];
-	printf("Enter elements: ");
-	for(int i = 0; i < n; i++)
-	{
-		scanf("%d", ar+i);
-	}
-	int temp = 0;
-	for(int i = 0; i < n; i++)
-	{
-		for(int j = i+1; j < n; j++)
-		{
-			if(ar[j] < ar[i])
-			{
-				temp = ar[j];
-				ar[j] = ar[i];
-				ar[i] = temp;
-			}
-		}
-	}
-	printf("\n");
-	for(int  i = 0; i < n; i++)
-                printf("%d ", ar[i]);
-	printf("\n");
-}
-=======
-#include<stdio.h>
-void main()
-{
-    int least, pos=0, arr[10],swap;
-    printf("Enter numbers: ");
-    for(int i=0;i<10;i++)
-        scanf("%d",&arr[i]);
-    for(int i=0;i<9;i++)
+  int n;
+  printf("Enter the length of array: ");
+  scanf("%d", &n);
+  int *ar = malloc(n * sizeof(int));
+  for(int i = 0; i < n; i++)
+  {
+    scanf("%d", (ar + i));
+  }
+  printf("\n");
+  int temp, k;
+  for(int i = 0; i < n-1; i++)
+  {
+    int j;
+		for(j = 0; j <= i; j++)
     {
-        pos=i;
-        least=arr[i];
-        for(int j=i;j<10;j++)
-            if(least>arr[j])
-            {
-                pos=j;
-                least=arr[j];
-            }
-        swap=arr[pos];
-        for(int j=pos;j>i;j--)
+      if(ar[i+1] > ar[j])
+        continue;
+      else
+      {
+        k = j;
+        j = i + 1;
+        temp = ar[j];
+        while(j > k)
         {
-            arr[j]=arr[j-1];
+          ar[j] = ar[j-1];
+          j--;
         }
-        arr[i]=swap;
+        ar[k] = temp;
+        break;
+      }
     }
-    for(int i=0;i<10;i++)
-        printf("\n%d",arr[i]);
+	}
+
+	for(int i = 0; i < n; i++)
+	{
+		printf("%d ", ar[i]);
+	}
+  printf("\n");
+	free(ar);
 }
->>>>>>> 5c9f865773fc0321f29fc6f14c4e2ab13ce4157e

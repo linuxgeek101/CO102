@@ -3,7 +3,7 @@
 
 int main()
 {
-	int *ar;int n, x;
+	      int *ar;int n, x;
         printf("No. of elements : ");
         scanf("%d", &n);
         ar = (int *) malloc(n * sizeof(int));
@@ -14,19 +14,18 @@ int main()
         int temp = 0;
         for(int i = 0; i < n-1; i++)
         {
-                for(int j = 0; j < n-i-1; j++)
-                {
-                        if(ar[j] > ar[j+1])
-                        {
-                                temp = ar[j+1];
-                                ar[j+1] = ar[j];
-                                ar[j] = temp;
-                        }
-
-                }
+          for(int j = 0; j < n-i-1; j++)
+          {
+            if(ar[j] > ar[j+1])
+            {
+              temp = ar[j+1];
+              ar[j+1] = ar[j];
+              ar[j] = temp;
+            }
+          }
         }
-	for(int i = 0;i < n; i++)
-		printf("%d ", ar[i]);
-	printf("\n");
+    for(int i = 0;i < n; i++)
+		  printf("%d ", ar[i]);
+	  printf("\n");
     free(ar);
 }

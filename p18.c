@@ -2,20 +2,20 @@
 int fact(int);
 void main()
 {
-    int x;
+    int n;
     printf("Enter number to find factorial: ");
-    scanf("%d",&x);
-    printf("%d! is: %d",x,fact(x));
+    scanf("%d",&n);
+    printf("%d! is: %d\n",n,fact(n));
 }
-int fact(int x)
+int fact(int n)
 {
-    if(x==1)
+    if(n<=1)
     {
         return(1);
     }
     else
     {
-        return(x*fact(x-1));
+        return(n*fact(n-1));
     }
 
 }
