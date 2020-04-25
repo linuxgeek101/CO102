@@ -1,15 +1,15 @@
-#include<stdio.h>
-void main()
+#include <stdio.h>
+int main()
 {
     int a1[3][3], a2[3][3], a3[3][3];
 
-    printf("Enter the first array:- \n");
+    printf("Enter the first 3 X 3 matrix:- \n");
 
     for(int i=0; i<3; i++)
         for(int j=0; j<3; j++)
             scanf("%d",&a1[i][j]);
 
-    printf("Enter the second array:- \n");
+    printf("Enter the second 3 X 3 matrix:- \n");
 
     for(int i=0; i<3; i++)
         for(int j=0; j<3; j++)
@@ -19,7 +19,7 @@ void main()
         for(int j=0; j<3; j++)
             a3[i][j] = a1[i][j] + a2[i][j];
     
-    printf("Sum of the two array=\n");
+    printf("Sum of the two matrices=\n");
 
     for(int i=0; i<3; i++)
     {

@@ -1,4 +1,5 @@
-//Program to pass and return pointer to function hence calculate average of an array.
+//Program to pass and return pointer to function 
+//hence calculate average of an array.
 
 #include <stdio.h>
 #include <stdlib.h>

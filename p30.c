@@ -1,4 +1,5 @@
-// Program to find the area and perimeter of a circle, rectangle, square and triangle using function.
+// Program to find the area and perimeter of a
+// circle, rectangle, square and triangle using function.
 
 #include <stdio.h>
 #include <math.h>

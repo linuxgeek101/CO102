@@ -1,10 +1,10 @@
-#include<stdio.h>
-void main()
+#include <stdio.h>
+int main()
 {
     int input;
-    char str[50];
+    char str[256];
     printf("Enter the string: ");
-    gets(str);
+    fgets(str, 256, stdin);
     printf("Please choose an option:-\n1: Convert to lowercase.\n2: Convert to uppercase.\n->");
     scanf("%d",&input);
     if(input==1)
@@ -14,7 +14,7 @@ void main()
             if(str[i]<=90&&str[i]>=65)
                 str[i]=str[i]+32;
         }
-        printf("Converted string: %s",str);
+        printf("Converted string: %s\n",str);
     }
     else if (input==2)
     {
@@ -23,8 +23,8 @@ void main()
             if(str[i]<=122&&str[i]>=97)
                 str[i]=str[i]-32;            
         }
-        printf("Converted string: %s",str);
+        printf("Converted string: %s\n",str);
     }
     else
-        printf("Invalid input!");
+        printf("Invalid input!\n");
 }
